@@ -1,7 +1,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Deedy - One Page Two Column Resume
+% One Page Two Column Resume
 % LaTeX Template
-% Version 1.2 (16/9/2014)
+% Version 1.3 (14/8/2015)
 %
 % Original author:
 % Debarghya Das (http://debarghyadas.com)
@@ -15,59 +15,29 @@
 % default. If you get compilation errors saying a font is missing, find the line
 % on which the font is used and either change it to a font included with your
 % operating system or comment the line out to use the default font.
-% 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% 
-% TODO:
-% 1. Integrate biber/bibtex for article citation under publications.
-% 2. Figure out a smoother way for the document to flow onto the next page.
-% 3. Add styling information for a "Projects/Hacks" section.
-% 4. Add location/address information
-% 5. Merge OpenFont and MacFonts as a single sty with options.
-% 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%
-% CHANGELOG:
-% v1.1:
-% 1. Fixed several compilation bugs with \renewcommand
-% 2. Got Open-source fonts (Windows/Linux support)
-% 3. Added Last Updated
-% 4. Move Title styling into .sty
-% 5. Commented .sty file.
-%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%
-% Known Issues:
-% 1. Overflows onto second page if any column's contents are more than the
-% vertical limit
-% 2. Hacky space on the first bullet point on the second column.
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
-\documentclass[]{deedy-resume-openfont}
+\documentclass[]{resume}
 \usepackage{fancyhdr}
- 
+
 \pagestyle{fancy}
 \fancyhf{}
- 
-\begin{document}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%
-%     LAST UPDATED DATE
-%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\lastupdated
+\begin{document}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
 %     TITLE NAME
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\namesection{Debarghya}{Das}{ \urlstyle{same}\href{http://debarghyadas.com}{debarghyadas.com}| \href{http://fb.co/dd}{fb.co/dd}\\
-\href{mailto:deedy@fb.com}{deedy@fb.com} | 607.379.5733 | \href{mailto:dd367@cornell.edu}{dd367@cornell.edu}
-}
+\namesection{Nickolas}{Balboni}{\href{mailto:balboni.n@husky.neu.edu}{balboni.n@husky.neu.edu} | (603) 819-8895
+}{ Website: \\ GitHub: \\ LinkedIn: \\ StackOverflow: \\ }{
+\urlstyle{same}\url{http://nickbalboni.com} \\
+\urlstyle{same}\url{http://github.com/SwankSwashbucklers} \\
+\urlstyle{same}\url{http://linkedin.com/in/nickbalboni} \\
+\urlstyle{same}\url{http://stackoverflow.com/users/2615252} \\ }{Availability: January - June 2016, through the Northeastern University Co-Op Program}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
@@ -75,82 +45,76 @@
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\begin{minipage}[t]{0.33\textwidth} 
+\begin{minipage}[t]{0.33\textwidth}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %     EDUCATION
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\section{Education} 
+\section{Education}
 
-\subsection{Cornell University}
-\descript{MEng in Computer Science}
-\location{Dec 2014 | Ithaca, NY}
+\subsection{Northeastern University}
+\descript{BS in Computer Engineering}
+\location{Expected May 2018 | Boston, MA}
+\location{ GPA: 3.08 / 4.0}
+\location{ Major GPA: 3.27 / 4.0}
 \sectionsep
 
-\subsection{Cornell University}
-\descript{BS in Computer Science}
-\location{May 2014 | Ithaca, NY}
-College of Engineering \\
-Magna Cum Laude\\
-\location{ Cum. GPA: 3.83 / 4.0 \\
-Major GPA: 3.9 / 4.0}
+\subsection{Phillips Exeter Academy}
+\location{Grad. May 2013 |  Exeter, NH}
 \sectionsep
-
-\subsection{La Martiniere for Boys}
-\location{Grad. May 2011|  Kolkata, India}
-\sectionsep
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%     LINKS
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\section{Links} 
-Facebook:// \href{https://facebook/dd}{\bf dd} \\
-Github:// \href{https://github.com/deedydas}{\bf deedydas} \\
-LinkedIn://  \href{https://www.linkedin.com/in/debarghyadas}{\bf debarghyadas} \\
-YouTube://  \href{https://www.youtube.com/user/DeedyDash007}{\bf DeedyDash007} \\
-Twitter://  \href{https://twitter.com/debarghya_das}{\bf @debarghya\_das} \\
-Quora://  \href{https://www.quora.com/Debarghya-Das}{\bf Debarghya-Das}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %     COURSEWORK
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Coursework}
-\subsection{Graduate}
-Advanced Machine Learning \\
-Open Source Software Engineering \\
-Advanced Interactive Graphics \\
-Compilers + Practicum \\
-Cloud Computing \\
-Evolutionary Computation \\
-Defending Computer Networks \\
-Machine Learning \\
+\custsubhead{Fundamentals of Networks}
+\hspace{8pt} Networks; The Internet; Python \\
+\vspace{4pt}
+\custsubhead{Fundamentals of Eng. Algorithms}
+\hspace{8pt} C++; Sorting, Tree and Graph \\
+\hspace{8pt} Algorithms; Algorithm Analysis\\
+\vspace{4pt}
+\custsubhead{Digital Design and Comp. Org.}
+\hspace{8pt} Combinational Logic Design; \\
+\hspace{8pt} Sequential Circuits; Verilog \\
+\vspace{4pt}
+\custsubhead{Circuits and Signals}
+\hspace{8pt} Analog Electronic Circuits \\
+\vspace{4pt}
+\custsubhead{Embedded Des. Enabling Robotics}
+\hspace{8pt} Unix; C; Wireless Networking \\
+\vspace{4pt}
+\custsubhead{Engineering Problem Solving}
+\hspace{8pt} C++; MatLAB \\
+\vspace{4pt}
+\custsubhead{Engineering Design}
+\hspace{8pt} AutoCAD, SolidWorks \\
 \sectionsep
-
-\subsection{Undergraduate}
-Information Retrieval \\
-Operating Systems \\
-Artificial Intelligence + Practicum \\
-Functional Programming \\
-Computer Graphics + Practicum \\
-{\footnotesize \textit{\textbf{(Research Asst. \& Teaching Asst 2x) }}} \\
-Unix Tools and Scripting \\
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %     SKILLS
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Skills}
-\subsection{Programming}
-\location{Over 5000 lines:}
-Java \textbullet{}   Shell \textbullet{} Python \textbullet{} Javascript \\
-OCaml \textbullet{} Matlab \textbullet{} Rails \textbullet{} \LaTeX\ \\ 
-\location{Over 1000 lines:}
-C \textbullet{} C++ \textbullet{} CSS \textbullet{} PHP \textbullet{} Assembly \\
-\location{Familiar:}
-AS3 \textbullet{} iOS \textbullet{} Android \textbullet{} MySQL
+\custsubhead{Proficient: }
+\hspace{8pt} Python \textbullet{} JavaScript  \\
+\hspace{8pt} Objective-C/iOS \textbullet{} CSS/Sass \\
+\custsubhead{Comfortable: }
+\hspace{8pt} Java \textbullet{} C++ \textbullet{} C \textbullet{} AngularJS \\
+\hspace{8pt} Bottle/Flask \textbullet{} Bash \\
+\custsubhead{Familiar: }
+\hspace{8pt} C\# \textbullet{} Android \textbullet{} MySQL
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     ABOUT ME
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{About Me}
+\hspace{8pt}
+\begin{tightemize} \item Enjoy playing the guitar and \\ piano. \item Work composing pieces of \\ music in my free time. \item Love to code! \end{tightemize}
 \sectionsep
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -159,85 +123,57 @@ AS3 \textbullet{} iOS \textbullet{} Android \textbullet{} MySQL
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\end{minipage} 
+\end{minipage}
 \hfill
-\begin{minipage}[t]{0.66\textwidth} 
+\begin{minipage}[t]{0.66\textwidth}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %     EXPERIENCE
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Experience}
-\runsubsection{Facebook}
-\descript{| Software Engineer }
-\location{Jan 2015 - Present | New York, NY}
-\sectionsep
 
-\runsubsection{Coursera}
-\descript{| KPCB Fellow + Software Engineering Intern }
-\location{June 2014 – Sep 2014 | Mountain View, CA}
+\runsubsection{Charles River Development}
+\descript{| Software Engineering Co-op }
+\location{January – July 2015 | Burlington, MA}
 \vspace{\topsep} % Hacky fix for awkward extra vertical space
-\begin{tightemize}\item 52 out of 2500 applicants chosen to be a KPCB Fellow 2014.
-\item Led and shipped Yoda - the admin interface for the new Phoenix platform. 
-\item Full-stack developer - Wrote and reviewed code for JS using Backbone, Jade, Stylus and Require and Scala using Play
-\end{tightemize}
+\begin{tightemize} \item Worked on the Post-Trade team writing bug fixes and unit-tests in Java. \item Created various Python scripts to assist with QA work. \item Worked repairing and maintaining the automation testing project for the team. \item Gained invaluable experience working in an agile setting (specifically scrum), as well as insight into financial markets. \end{tightemize}
 \sectionsep
 
-\runsubsection{Google}
+\runsubsection{B2W Software}
 \descript{| Software Engineering Intern }
-\location{May 2013 – Aug 2013 | Mountain View, CA}
-\begin{tightemize}
-\item Worked on the YouTube Captions team, in Javascript and Python to plan, to design and develop the full stack to add and edit Automatic Speech Recognition captions. In production.\item Created a backbone.js-like framework for the Captions editor.\end{tightemize}
+\location{April – September 2014 | Portsmouth, NH}
+\begin{tightemize} \item Worked on both the Mobile and Maintain teams filling various responsibilities. \item Created the first iteration for the equipment section of the maintenance module, which was pushed into production in the 2014 release. \item Gained experience with release testing, on both iOS and Android tablets. \item Worked on the cross-platform tablet application, coding in Javascript with the Kendo UI framework, and working with PhoneGap. \end{tightemize}
 \sectionsep
 
-\runsubsection{Phabricator}
-\descript{| Open Source Contributor \& Team Leader}
-\location{Jan 2013 – May 2013 | Palo Alto, CA \& Ithaca, NY}
-\begin{tightemize}
-\item Phabricator is used daily by Facebook, Dropbox, Quora, Asana and more.\item I created the Meme generator and more in PHP and Shell.\item Led a team from MIT, Cornell, IC London and UHelsinki for the project.\end{tightemize}
-\sectionsep
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%     RESEARCH
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\section{Research}
-\runsubsection{Cornell Robot Learning Lab}
-\descript{| Researcher}
-\location{Jan 2014 – Jan 2015 | Ithaca, NY}
-Worked with \textbf{\href{http://www.cs.cornell.edu/~ashesh/}{Ashesh Jain}} and \textbf{\href{http://www.cs.cornell.edu/~asaxena/}{Prof Ashutosh Saxena}} to create \textbf{PlanIt}, a tool which  learns from large scale user preference feedback to plan robot trajectories in human environments.  
-\sectionsep
-
-\runsubsection{Cornell Phonetics Lab}
-\descript{| Head Undergraduate Researcher}
-\location{Mar 2012 – May 2013 | Ithaca, NY}
-Led the development of \textbf{QuickTongue}, the first ever breakthrough tongue-controlled game with \textbf{\href{http://conf.ling.cornell.edu/~tilsen/}{Prof Sam Tilsen}} to aid in Linguistics research. 
+\runsubsection{B2W Software}
+\descript{| QA \& Software Engineering Intern }
+\location{June – September 2013 | Portsmouth, NH}
+\begin{tightemize} \item Worked with the Track team doing QA and software development work. \item Wrote unit tests and bug fixes for the Track module of the tablet application. \item Gained experience testing software products, logging bugs and using JIRA. \item Designed and developed a continuous integration system for ad hoc deployment of the B2W Mobile application. \end{tightemize}
 \sectionsep
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%     AWARDS
+%     Projects
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\section{Awards} 
-\begin{tabular}{rll}
-2014	     & top 52/2500  & KPCB Engineering Fellow\\
-2014	     & 1\textsuperscript{st}/50  & Microsoft Coding Competition, Cornell\\
-2013	     & National  & Jump Trading Challenge Finalist\\
-2013     & 7\textsuperscript{th}/120 & CS 3410 Cache Race Bot Tournament  \\
-2012     & 2\textsuperscript{nd}/150 & CS 3110 Biannual Intra-Class Bot Tournament \\
-2011     & National & Indian National Mathematics Olympiad (INMO) Finalist \\
-\end{tabular}
+\section{Projects}
+\runsubsection{Apps With Style, LLC}
+\descript{| Co-Founder \& Software Developer }
+\location{January 2014 – Present | Exeter, NH}
+\begin{tightemize} \item Worked creating mobile apps for freelance jobs as well as apps to be released under the company developer account. \item Built mobile applications using both native iOS development (i.e. Objective-C, Swift, Xcode, Core Data, Interface Builder, and Size Classes) and cross-platform development (i.e. Phonegap, Javascript, AngularJS, CSS, and HTML) \item Completed and released an iOS password and account manager called passKey, which is out on the Apple app store today.\item Gained experience running and maintaining a business. \item Created a company website: \urlstyle{same}\url{http://appswithstyle.net}, for showcasing applications and company information. \end{tightemize}
 \sectionsep
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%     PUBLICATIONS
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\runsubsection{Websitr}
+\descript{| Github:// \href{https://github.com/SwankSwashbucklers/websitr}{ \bf websitr}}
+\fontspec[Path = fonts/raleway/]{Raleway-Medium}\fontsize{10pt}{12pt}\selectfont {} \normalfont
+\begin{tightemize} \item A python script for creating a website/webapp project. \item Complete with a python build-tool for favicon, css, and route generation. \end{tightemize}
+\sectionsep
 
-\section{Publications} 
-\renewcommand\refname{\vskip -1.5cm} % Couldn't get this working from the .cls file
-\bibliographystyle{abbrv}
-\bibliography{publications}
-\nocite{*}
+\runsubsection{Scrumptious Securities}
+\descript{| Github:// \href{https://github.com/SwankSwashbucklers/scrumptious-securities}{ \bf scrumptious-securities}}
+\fontspec[Path = fonts/raleway/]{Raleway-Medium}\fontsize{10pt}{12pt}\selectfont {} \normalfont
+\begin{tightemize} \item A collection of python scripts designed to scrape, and display metrics for securities as well as store and analyze that data. \end{tightemize}
+\sectionsep
 
-\end{minipage} 
+\end{minipage}
 \end{document}  \documentclass[]{article}
